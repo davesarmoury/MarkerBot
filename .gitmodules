@@ -1,0 +1,6 @@
+[submodule "CameraCalibrations"]
+	path = CameraCalibrations
+	url = git@github.com:davesarmoury/CameraCalibrations.git
+[submodule "NCtoRobot"]
+	path = NCtoRobot
+	url = git@github.com:davesarmoury/NCtoRobot.git
