@@ -45,8 +45,8 @@ cv_file.release()
 newcameramtx, roi = cv2.getOptimalNewCameraMatrix(camera_matrix, dist_matrix, (w,h), 0, (w,h))
 
 while True:
-#    ret_val, original = cam.read()
-    original = cv2.imread("test.jpg")
+    ret_val, original = cam.read()
+#    original = cv2.imread("test.jpg")
     original = cv2.undistort(original, camera_matrix, dist_matrix, None, newcameramtx)
 
     mask = cv2.cvtColor(original, cv2.COLOR_BGR2GRAY)
